@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/asaskevich/govalidator"
+	"github.com/conku/qor/test/utils"
+	"github.com/conku/validations"
 	"github.com/jinzhu/gorm"
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/qor/qor/test/utils"
-	"github.com/qor/validations"
 )
 
 var db *gorm.DB
