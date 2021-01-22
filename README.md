@@ -1,14 +1,14 @@
 # Validations
 
-Validations provides a means to [*validate*](https://en.wikipedia.org/wiki/Data_validation) [GORM](https://github.com/jinzhu/gorm) models when creating and updating them.
+Validations provides a means to [_validate_](https://en.wikipedia.org/wiki/Data_validation) [GORM](https://github.com/conku/gorm) models when creating and updating them.
 
 ### Register GORM Callbacks
 
-Validations uses [GORM](https://github.com/jinzhu/gorm) callbacks to handle *validations*, so you will need to register callbacks first:
+Validations uses [GORM](https://github.com/conku/gorm) callbacks to handle _validations_, so you will need to register callbacks first:
 
 ```go
 import (
-  "github.com/jinzhu/gorm"
+  "github.com/conku/gorm"
   "github.com/conku/validations"
 )
 
@@ -56,7 +56,7 @@ db.Create(&User{}).GetErrors() // => []error{"age need to be 18+", "name can't b
 
 ## [Govalidator](https://github.com/asaskevich/govalidator) integration
 
-Qor [Validations](https://github.com/conku/validations) supports [govalidator](https://github.com/asaskevich/govalidator), so you could add a tag into your struct for some common *validations*, such as *check required*, *numeric*, *length*, etc.
+Qor [Validations](https://github.com/conku/validations) supports [govalidator](https://github.com/asaskevich/govalidator), so you could add a tag into your struct for some common _validations_, such as _check required_, _numeric_, _length_, etc.
 
 ```
 type User struct {
